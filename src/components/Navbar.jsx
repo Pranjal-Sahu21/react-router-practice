@@ -1,45 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/react-router-logo.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="logo-section">
         <img className="logo" src={logo} alt="React Router Logo" width="60px" />
         <h1 className="router-text">router</h1>
       </div>
 
-      <ul>
+      <div
+        className={`hamburger ${menuOpen ? "open" : ""}`}
+        onClick={toggleMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <NavLink
           to="/"
           end
           className={({ isActive }) => `link ${isActive ? "active" : ""}`}
+          onClick={closeMenu}
         >
           <li>Home</li>
         </NavLink>
         <NavLink
           to="/about"
           className={({ isActive }) => `link ${isActive ? "active" : ""}`}
+          onClick={closeMenu}
         >
           <li>About</li>
         </NavLink>
         <NavLink
           to="/products"
           className={({ isActive }) => `link ${isActive ? "active" : ""}`}
+          onClick={closeMenu}
         >
           <li>Products</li>
         </NavLink>
         <NavLink
           to="/contact"
           className={({ isActive }) => `link ${isActive ? "active" : ""}`}
+          onClick={closeMenu}
         >
           <li>Contact</li>
         </NavLink>
       </ul>
 
-      <button>Get Started</button>
-    </div>
+      <button onClick={() => navigate("/products")}>Get Started</button>
+    </nav>
   );
 };
 
