@@ -111,13 +111,13 @@ a {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.navbar button:hover {
+.navbar button:hover, .return-button:hover {
   background: linear-gradient(135deg, var(--hover-accent), var(--accent));
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-.navbar button:active {
+.navbar button:active, .return-button:active {
   transform: scale(0.97);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -366,7 +366,7 @@ a {
   min-height: 100px;
 }
 
-.contact-form button {
+.contact-form button, .return-button {
   background: linear-gradient(135deg, var(--accent), var(--hover-accent));
   color: var(--text-light);
   border: none;
@@ -379,4 +379,8 @@ a {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.return-button {
+  margin-top: 48px;
 }
