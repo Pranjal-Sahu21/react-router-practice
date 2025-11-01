@@ -55,9 +55,16 @@ const Navbar = () => {
         >
           <li>Contact</li>
         </NavLink>
+        <NavLink
+          to="/jobs"
+          className={({ isActive }) => `link ${isActive ? "active" : ""}`}
+          onClick={closeMenu}
+        >
+          <li>Jobs</li>
+        </NavLink>
       </ul>
 
-      <button onClick={() => navigate("/products")}>Get Started</button>
+      <button onClick={() => navigate("/about")}>Get Started</button>
     </nav>
   );
 };

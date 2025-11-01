@@ -314,6 +314,8 @@ a {
   margin-top: 20px;
   background: var(--bg-light);
   border-radius: 24px;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 .contact-info-container {
@@ -325,6 +327,9 @@ a {
   width: 100%;
   border-radius: 24px;
   margin-top: 20px;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+
 }
 
 .contact-form {
@@ -383,4 +388,74 @@ a {
 
 .return-button {
   margin-top: 48px;
+}
+
+.jobs-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 8% 60px;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.job-card {
+  display: block;
+  background: var(--bg-light);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent-light);
+}
+
+.job-card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.job-card p {
+  font-size: 15px;
+  color: #666;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.job-card p::before {
+  content: "📍";
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .jobs-container {
+    padding: 80px 5% 40px;
+  }
+
+  .jobs-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .job-card {
+    padding: 22px;
+  }
+
+  .job-card h4 {
+    font-size: 18px;
+  }
 }

@@ -1,0 +1,34 @@
+{
+    "jobs":[
+        {   
+            "id":1,
+            "title":"Sr. React Developer",
+            "salary":50000,
+            "location":"London, UK"
+        },
+        {
+            "id":2,
+            "title":"Frontend Developer",
+            "salary":40000,
+            "location":"San Fransisco, US"
+        },
+        {
+            "id":3,
+            "title":"Backend Developer",
+            "salary":60000,
+            "location":"Paris, FRA"
+        },
+        {
+            "id":4,
+            "title":"Data Analyst",
+            "salary":55000,
+            "location":"Delhi, IN"
+        },
+        {
+            "id":5,
+            "title":"AI Engineer",
+            "salary":70000,
+            "location":"Tokyo, JAP"
+        }
+    ]
+}
