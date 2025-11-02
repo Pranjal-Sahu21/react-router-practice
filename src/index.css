@@ -256,7 +256,7 @@ a {
   border-radius: 16px;
 }
 
-.contact-buttons button {
+.contact-buttons button, .error-button, .apply-button {
   background: linear-gradient(135deg, var(--accent), var(--hover-accent));
   color: var(--text-light);
   border: none;
@@ -272,14 +272,14 @@ a {
 }
 
 .contact-buttons button:hover,
-.contact-form button:hover {
+.contact-form button:hover, .error-button:hover, .apply-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   background: linear-gradient(135deg, var(--hover-accent), var(--accent));
 }
 
 .contact-buttons button:active,
-.contact-form button:active {
+.contact-form button:active, .error-button:active, .apply-button:active {
   transform: scale(0.97);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -458,4 +458,24 @@ a {
   .job-card h4 {
     font-size: 18px;
   }
+}
+
+.error-button, .apply-button {
+  margin-top: 48px;
+}
+
+.error-container {
+  margin-top: 54px;
+}
+
+.job-details-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 24px;
+  background-color: var(--bg-light);
+  gap: 12px;
+  margin-top: 48px;
+  text-align: left;
 }

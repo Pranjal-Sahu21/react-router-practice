@@ -1,34 +1,39 @@
 {
-    "jobs":[
-        {   
-            "id":1,
-            "title":"Sr. React Developer",
-            "salary":50000,
-            "location":"London, UK"
-        },
-        {
-            "id":2,
-            "title":"Frontend Developer",
-            "salary":40000,
-            "location":"San Fransisco, US"
-        },
-        {
-            "id":3,
-            "title":"Backend Developer",
-            "salary":60000,
-            "location":"Paris, FRA"
-        },
-        {
-            "id":4,
-            "title":"Data Analyst",
-            "salary":55000,
-            "location":"Delhi, IN"
-        },
-        {
-            "id":5,
-            "title":"AI Engineer",
-            "salary":70000,
-            "location":"Tokyo, JAP"
-        }
-    ]
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Sr. React Developer",
+      "salary": 50000,
+      "location": "London, UK",
+      "description": "Leads the design and development of dynamic, high-performing web applications using React and related technologies. Collaborates closely with designers and backend teams to create seamless user experiences. Optimizes code for performance and scalability, enforces coding standards, and mentors junior developers. Stays updated with emerging frontend trends to continuously improve application architecture and development processes."
+    },
+    {
+      "id": 2,
+      "title": "Frontend Developer",
+      "salary": 40000,
+      "location": "San Fransisco, US",
+      "description": "Builds engaging, responsive, and accessible user interfaces using HTML, CSS, JavaScript, and modern frameworks like React or Vue. Works closely with designers and backend engineers to translate UI/UX wireframes into functional applications. Ensures cross-browser compatibility, performance optimization, and code maintainability while continuously enhancing the overall user experience."
+    },
+    {
+      "id": 3,
+      "title": "Backend Developer",
+      "salary": 60000,
+      "location": "Paris, FRA",
+      "description": "Designs and develops robust server-side systems, APIs, and database structures to support web and mobile applications. Implements security best practices, manages data integrity, and ensures high performance and scalability. Collaborates with frontend teams to deliver reliable and efficient integrations while maintaining documentation and continuous system improvement."
+    },
+    {
+      "id": 4,
+      "title": "Data Analyst",
+      "salary": 55000,
+      "location": "Delhi, IN",
+      "description": "Collects, cleans, and interprets large datasets to uncover meaningful insights that support strategic decision-making. Develops visualizations, dashboards, and reports using tools like Power BI, Tableau, or Python. Identifies trends, patterns, and opportunities for business optimization, ensuring data accuracy and reliability throughout all analyses and presentations."
+    },
+    {
+      "id": 5,
+      "title": "AI Engineer",
+      "salary": 70000,
+      "location": "Tokyo, JAP",
+      "description": "Designs, trains, and deploys machine learning and artificial intelligence models to solve complex business problems. Works with data scientists and engineers to process large datasets, optimize algorithms, and integrate AI solutions into production systems. Ensures ethical, efficient, and scalable model performance through continuous evaluation and improvement."
+    }
+  ]
 }
