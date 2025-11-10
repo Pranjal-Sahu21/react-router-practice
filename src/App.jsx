@@ -18,6 +18,7 @@ import JobsLayout from "./layout/JobsLayout";
 import Jobs, { jobsLoader } from "./pages/Jobs";
 import Error from "./components/Error";
 import JobDetails, { jobDetailsLoader } from "./components/JobDetails";
+import GitHub from "./pages/GitHub";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -30,7 +31,7 @@ const App = () => {
           <Route path="info" element={<ContactInfo />} />
           <Route path="form" element={<ContactForm />} />
         </Route>
-        <Route path="jobs" element={<JobsLayout />} errorElement={<Error />}>
+        {/* <Route path="jobs" element={<JobsLayout />} errorElement={<Error />}>
           <Route
             index
             element={<Jobs />}
@@ -41,7 +42,8 @@ const App = () => {
             element={<JobDetails />}
             loader={jobDetailsLoader}
           />
-        </Route>
+        </Route> */}
+        <Route path="github" element={<GitHub/>}/>
         <Route path="*" element={<NotFound />} />
       </Route>
     )

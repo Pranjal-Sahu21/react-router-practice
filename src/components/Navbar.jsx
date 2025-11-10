@@ -55,12 +55,19 @@ const Navbar = () => {
         >
           <li>Contact</li>
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to="/jobs"
           className={({ isActive }) => `link ${isActive ? "active" : ""}`}
           onClick={closeMenu}
         >
           <li>Jobs</li>
+        </NavLink> */}
+        <NavLink
+          to="/github"
+          className={({ isActive }) => `link ${isActive ? "active" : ""}`}
+          onClick={closeMenu}
+        >
+          <li>GitHub</li>
         </NavLink>
       </ul>
 
